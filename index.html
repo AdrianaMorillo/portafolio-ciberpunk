@@ -51,11 +51,22 @@
       text-shadow: 0 0 10px #0ff;
     }
 
+    /* 🔥 FIX COLOR TEXTO */
     .card {
       background: #111;
       border: 1px solid #0ff;
       box-shadow: 0 0 10px rgba(0,255,255,0.3);
       transition: transform 0.3s;
+      color: #ffffff;
+    }
+
+    .card h5 {
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    .card p {
+      color: #ffffff;
     }
 
     .card:hover {
@@ -98,7 +109,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="#">💻 Adriana Morillo Dev</a>
+    <a class="navbar-brand" href="#">💻 Adriana Morillo </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon bg-light"></span>
     </button>
@@ -115,9 +126,9 @@
 <!-- Hero -->
 <section id="hero" class="hero">
   <div>
-  <img src="assets/Adriana.jpg" alt="Foto de Adriana">
+    <img src="assets/Adriana.jpg" alt="Foto de Adriana">
     <h1 class="glow mt-3">Hola, soy Adriana Morillo 👾</h1>
-    <p>Estudiante de Ingeniería en Sistemas con interés en el desarrollo web y bases de datos, actualmente fortaleciendo mis habilidades en programación y diseño de aplicaciones.</p>
+    <p>Estudiante de Ingeniería en Sistemas con interés en el desarrollo web y bases de datos.</p>
   </div>
 </section>
 
@@ -129,35 +140,21 @@
     <div class="col-md-4">
       <div class="card p-3 text-center">
         <i class="fas fa-code fa-2x"></i>
-        <h5>Programación en C#</h5>
+        <h5>C#</h5>
       </div>
     </div>
 
     <div class="col-md-4">
       <div class="card p-3 text-center">
         <i class="fas fa-terminal fa-2x"></i>
-        <h5>Programación en C++</h5>
+        <h5>C++</h5>
       </div>
     </div>
 
     <div class="col-md-4">
       <div class="card p-3 text-center">
         <i class="fas fa-laptop-code fa-2x"></i>
-        <h5>Desarrollo en Visual Studio</h5>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card p-3 text-center">
-        <i class="fab fa-github fa-2x"></i>
-        <h5>Control de Versiones (Git & GitHub)</h5>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card p-3 text-center">
-        <i class="fas fa-rocket fa-2x"></i>
-        <h5>Despliegue Web (Vercel)</h5>
+        <h5>Visual Studio</h5>
       </div>
     </div>
 
@@ -172,6 +169,8 @@
     <button class="btn btn-cyber" onclick="filter('all')">Todos</button>
     <button class="btn btn-cyber" onclick="filter('bd')">Base de Datos</button>
     <button class="btn btn-cyber" onclick="filter('game')">Juegos</button>
+    <button class="btn btn-cyber" onclick="filter('web')">Web</button>
+    <button class="btn btn-cyber" onclick="filter('app')">Aplicaciones</button>
   </div>
 
   <div class="row" id="projectList">
@@ -179,14 +178,49 @@
     <div class="col-md-4 project bd">
       <div class="card p-3">
         <h5>Sistema de Gestión de Negocio</h5>
-        <p>Proyecto en SQL Server con procedimientos almacenados, triggers y auditoría.</p>
+        <p>SQL Server, triggers y auditoría.</p>
       </div>
     </div>
 
     <div class="col-md-4 project game">
       <div class="card p-3">
         <h5>Juego Tetris Web</h5>
-        <p>Proyecto basado en lógica de juego y estructura web.</p>
+        <p>Juego desarrollado con HTML, CSS y JS.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 project web">
+      <div class="card p-3">
+        <h5>Portafolio Web</h5>
+        <p>Portafolio personal con diseño ciberpunk.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 project web">
+      <div class="card p-3">
+        <h5>Tienda Online</h5>
+        <p>Simulación de e-commerce.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 project web">
+      <div class="card p-3">
+        <h5>Garage Online</h5>
+        <p>Gestión de servicios automotrices.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 project web">
+      <div class="card p-3">
+        <h5>Clínica Veterinaria</h5>
+        <p>Registro de mascotas y citas.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 project app">
+      <div class="card p-3">
+        <h5>Apps con .NET MAUI</h5>
+        <p>Aplicaciones multiplataforma.</p>
       </div>
     </div>
 
@@ -198,46 +232,23 @@
   <p>© 2026 Morillo | Portafolio Profesional</p>
 
   <div class="social">
-
-    <a href="https://github.com/AdrianaMorillo" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-
-    <a href="https://vercel.com/adriana-morillo-s-projects" target="_blank">
-      <i class="fas fa-rocket"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/in/adriana-morillo-8415b829b/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="https://www.instagram.com/adri_morillom/" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
-
+    <a href="https://github.com/AdrianaMorillo" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://vercel.com" target="_blank"><i class="fas fa-rocket"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
-
-  <button class="btn btn-cyber mt-3" onclick="topFunction()">
-    ⬆ Volver Arriba
-  </button>
 </footer>
 
-<!-- JS -->
 <script>
-  function filter(category) {
-    let projects = document.querySelectorAll('.project');
-    projects.forEach(p => {
-      if (category === 'all' || p.classList.contains(category)) {
-        p.style.display = 'block';
-      } else {
-        p.style.display = 'none';
-      }
-    });
-  }
-
-  function topFunction() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+function filter(category) {
+  let projects = document.querySelectorAll('.project');
+  projects.forEach(p => {
+    if (category === 'all' || p.classList.contains(category)) {
+      p.style.display = 'block';
+    } else {
+      p.style.display = 'none';
+    }
+  });
+}
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
