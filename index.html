@@ -11,42 +11,71 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Font Awesome (para los iconos de redes) -->
+  <!-- Font Awesome (redes) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
-      background: #0f172a;
+      background: #0a0a0a;
       color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Courier New', monospace;
+    }
+
+    h1, h2, h5 {
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
     }
 
     .card {
-      background: #1e293b;
-      border: 1px solid #22c55e;
+      background: #111;
+      border: 1px solid #0ff;
       color: white;
+      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #0ff;
     }
 
     .btn-cyber {
       background: transparent;
-      border: 1px solid #22c55e;
-      color: #22c55e;
+      border: 1px solid #0ff;
+      color: #0ff;
     }
 
     .btn-cyber:hover {
-      background: #22c55e;
+      background: #0ff;
       color: black;
     }
 
     i {
-      color: #22c55e;
+      color: #0ff;
       margin-bottom: 10px;
+      font-size: 2rem;
     }
 
     .social a {
-      color: #22c55e;
+      color: #0ff;
       font-size: 1.8rem;
       margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: white;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #0ff;
+      box-shadow: 0 0 15px #0ff;
+      object-fit: cover;
+      margin-bottom: 15px;
     }
   </style>
 </head>
@@ -55,8 +84,55 @@
 
 <!-- HERO -->
 <section class="text-center py-5">
+
+ <img src="assets/Adriana.jpg" alt="Foto de Adriana" class="profile-img">
+
   <h1>Mi Portafolio</h1>
-  <p>Ingeniera en Sistemas | Desarrollo Web y Aplicaciones</p>
+  <p>Estudiante de Ingeniería en Sistemas con interés en el desarrollo web y bases de datos, actualmente fortaleciendo mis habilidades en programación y diseño de aplicaciones.</p>
+
+<!-- STACK TECNOLÓGICO -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Stack Tecnológico</h2>
+
+  <div class="row text-center">
+
+    <div class="col-md-3">
+      <div class="card p-3">
+        <i class="bi bi-cpu"></i>
+        <h5>C++</h5>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3">
+        <i class="bi bi-code-slash"></i>
+        <h5>C#</h5>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3">
+        <i class="bi bi-github"></i>
+        <h5>GitHub</h5>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3">
+        <i class="bi bi-triangle"></i>
+        <h5>Vercel</h5>
+      </div>
+    </div>
+
+    <div class="col-md-3 mt-3">
+      <div class="card p-3">
+        <i class="bi bi-window"></i>
+        <h5>Visual Studio</h5>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- PROYECTOS -->
 <section class="container py-5">
@@ -112,48 +188,16 @@
       </div>
     </div>
 
+<div class="col-md-4 project">
+  <div class="card p-3">
+    <h5>Aplicaciones en Visual Studio con .NET MAUI</h5>
+    <p>Desarrollo de aplicaciones multiplataforma utilizando .NET MAUI en Visual Studio.</p>
+  </div>
+</div>
   </div>
 </section>
 
-<!-- STACK TECNOLÓGICO -->
-<section class="container py-5">
-  <h2 class="text-center mb-4">Stack Tecnológico</h2>
-
-  <div class="row text-center">
-
-    <div class="col-md-3"><div class="card p-3"><i class="bi bi-filetype-html"></i><h5>HTML</h5></div></div>
-    <div class="col-md-3"><div class="card p-3"><i class="bi bi-filetype-css"></i><h5>CSS</h5></div></div>
-    <div class="col-md-3"><div class="card p-3"><i class="bi bi-filetype-js"></i><h5>JavaScript</h5></div></div>
-    <div class="col-md-3"><div class="card p-3"><i class="bi bi-bootstrap"></i><h5>Bootstrap</h5></div></div>
-
-    <div class="col-md-3 mt-3"><div class="card p-3"><i class="bi bi-database"></i><h5>SQL Server</h5></div></div>
-    <div class="col-md-3 mt-3"><div class="card p-3"><i class="bi bi-code-slash"></i><h5>C#</h5></div></div>
-
-    <div class="col-md-3 mt-3">
-      <div class="card p-3">
-        <i class="bi bi-phone"></i>
-        <h5>.NET MAUI</h5>
-      </div>
-    </div>
-
-    <div class="col-md-3 mt-3">
-      <div class="card p-3">
-        <i class="bi bi-github"></i>
-        <h5>GitHub</h5>
-      </div>
-    </div>
-
-    <div class="col-md-3 mt-3">
-      <div class="card p-3">
-        <i class="bi bi-triangle"></i>
-        <h5>Vercel</h5>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  <div class="social">
+ <div class="social">
     <a href="https://github.com/AdrianaMorillo" target="_blank">
       <i class="fab fa-github"></i>
     </a>
@@ -168,6 +212,7 @@
     </a>
   </div>
 </section>
+
 <script>
 function filter(category) {
   let projects = document.querySelectorAll('.project');
@@ -175,7 +220,19 @@ function filter(category) {
     p.style.display = (category === 'all' || p.classList.contains(category)) ? 'block' : 'none';
   });
 }
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 </script>
 
+<div class="text-center mt-3">
+  <button class="btn btn-cyber" onclick="topFunction()">
+    ⬆ Volver Arriba
+  </button>
+</div>
 </body>
 </html>
